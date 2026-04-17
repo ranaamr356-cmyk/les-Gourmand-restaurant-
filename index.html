@@ -1,0 +1,610 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Gourmands | A Sensory Culinary Journey</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-primary"
+  >
+    <!-- navigation bar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md shadow-sm dark:shadow-none"
+    >
+      <div
+        class="main-content-container flex justify-between items-center py-8"
+      >
+        <a
+          href="#"
+          class="font-serif italic text-3xl text-rose-900 dark:text-rose-500"
+          >Les Gourmands</a
+        >
+        <div class="hidden md:flex items-center space-x-12">
+          <a
+            href="#home"
+            class="text-rose-900 dark:text-rose-400 border-b-2 border-rose-900/30 overline-spec transition-all duration-300"
+            >Home</a
+          >
+          <a
+            href="#menu"
+            class="text-stone-600 dark:text-stone-400 hover:text-rose-800 transition-colors overline-spec"
+            >Menu</a
+          >
+          <a
+            href="#reservations"
+            class="text-stone-600 dark:text-stone-400 hover:text-rose-800 transition-colors overline-spec"
+            >Reservations</a
+          >
+          <a
+            href="#gifts"
+            class="text-stone-600 dark:text-stone-400 hover:text-rose-800 transition-colors overline-spec"
+            >Gifts</a
+          >
+          <a
+            href="#about"
+            class="text-stone-600 dark:text-stone-400 hover:text-rose-800 transition-colors overline-spec"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="text-stone-600 dark:text-stone-400 hover:text-rose-800 transition-colors overline-spec"
+            >Contact</a
+          >
+        </div>
+        <a
+          href="#reservations"
+          class="primary-gradient-btn text-on-primary px-8 py-4 rounded-md overline-spec !tracking-widest hover:opacity-90 active:scale-95 transition-all"
+          >Book a Table</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <!-- hero section -->
+      <section
+        id="home"
+        class="relative h-screen flex items-center justify-center overflow-hidden"
+      >
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ5ryw0Vu2mRy53Y6k-yBYyXpJxeBEBmZkyDHziFsfy-j8dFT_Xy8i-Hd4FAIjbl2eOH6LeFaqTMZHneD1YHKwu4BWJh-FC3Y0usCfMvh8dBmlwUToQnK36tTld5_-qqdg-eyXokI5qRplEZO_1RqwtZBKRUfY9iXSWkMu2e02DQnEGP7FiNSL9yUW4Q9uNGx6-6NhO3NfwsdJxPif6bBuBR51jdZJMumy1abo5FlQhAa6IAX5XJLzusiWx0P3Phsci0Yr08hHnPA"
+            alt="Restaurant Table"
+            class="w-full h-full object-cover scale-105"
+            data-alt="cinematic close-up of a perfectly set restaurant table with fine crystal glassware, white linen, and flickering candlelight in a dim warm interior"
+          />
+          <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div
+          class="relative z-10 text-center text-white main-content-container"
+        >
+          <h1 class="h1-spec font-headline mb-8">Les Gourmands</h1>
+          <p
+            class="body-lg-spec uppercase tracking-[0.3em] opacity-90 max-w-4xl mx-auto"
+          >
+            Where the symphony of taste meets the art of the atmosphere.
+          </p>
+        </div>
+        <div
+          class="absolute bottom-16 left-1/2 -translate-x-1/2 text-white/60 flex flex-col items-center"
+        >
+          <span class="overline-spec mb-3">Explore</span>
+          <span class="material-symbols-outlined animate-bounce text-3xl"
+            >expand_more</span
+          >
+        </div>
+      </section>
+      menu -->\n
+      <section id="menu" class="bg-surface py-48 md:py-64">
+        <div class="main-content-container">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-32 flex flex-col items-center">
+              <span class="text-primary overline-spec mb-6 block"
+                >Seasonal Carte</span
+              >
+              <h2 class="h2-spec font-headline text-on-surface">Le Menu</h2>
+            </div>
+
+            <!-- starter
+                    <!-- Les Entrées -->
+            <div class="mb-32 flex flex-col space-y-16">
+              <h3
+                class="h3-spec font-headline italic text-primary border-b-2 border-outline-variant/20 pb-6"
+              >
+                Les Entrées
+              </h3>
+              <div class="space-y-16">
+                <div class="group flex flex-col">
+                  <div class="flex justify-between items-baseline mb-4">
+                    <h4 class="body-spec font-bold uppercase text-on-surface">
+                      Carpaccio de Saint-Jacques
+                    </h4>
+                    <span class="body-spec text-secondary font-medium">32</span>
+                  </div>
+                  <p class="body-lg-spec text-on-surface-variant max-w-2xl">
+                    Thinly sliced scallops, citrus emulsion, black truffle
+                    pearls, and garden micro-herbs.
+                  </p>
+                </div>
+                <div class="group flex flex-col">
+                  <div class="flex justify-between items-baseline mb-4">
+                    <h4 class="body-spec font-bold uppercase text-on-surface">
+                      Foie Gras de Canard
+                    </h4>
+                    <span class="body-spec text-secondary font-medium">38</span>
+                  </div>
+                  <p class="body-lg-spec text-on-surface-variant max-w-2xl">
+                    Artisanal terrine, fig compote, toasted brioche, and aged
+                    balsamic reduction.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- main dishes -->
+            <div class="mb-32 flex flex-col space-y-16">
+              <h3
+                class="h3-spec font-headline italic text-primary border-b-2 border-outline-variant/20 pb-6"
+              >
+                Les Plats
+              </h3>
+              <div class="space-y-16">
+                <div class="group flex flex-col">
+                  <div class="flex justify-between items-baseline mb-4">
+                    <h4 class="body-spec font-bold uppercase text-on-surface">
+                      Filet de Boeuf au Poivre
+                    </h4>
+                    <span class="body-spec text-secondary font-medium">62</span>
+                  </div>
+                  <p class="body-lg-spec text-on-surface-variant max-w-2xl">
+                    Prime beef tenderloin, Madagascar green peppercorn sauce,
+                    bone marrow crust, and truffle mash.
+                  </p>
+                </div>
+
+                <div class="group flex flex-col">
+                  <div class="flex justify-between items-baseline mb-4">
+                    <h4 class="body-spec font-bold uppercase text-on-surface">
+                      Turbot de Ligne
+                    </h4>
+                    <span class="body-spec text-secondary font-medium">58</span>
+                  </div>
+                  <p class="body-lg-spec text-on-surface-variant max-w-2xl">
+                    Line-caught wild turbot, champagne beurre blanc, wild
+                    asparagus, and oscietra caviar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- desserts -->
+            <div class="flex flex-col space-y-16">
+              <h3
+                class="h3-spec font-headline italic text-primary border-b-2 border-outline-variant/20 pb-6"
+              >
+                Les Desserts
+              </h3>
+              <div class="space-y-16">
+                <div class="group flex flex-col">
+                  <div class="flex justify-between items-baseline mb-4">
+                    <h4 class="body-spec font-bold uppercase text-on-surface">
+                      Soufflé au Grand Marnier
+                    </h4>
+                    <span class="body-spec text-secondary font-medium">24</span>
+                  </div>
+                  <p class="body-lg-spec text-on-surface-variant max-w-2xl">
+                    Classic orange liqueur soufflé, blood orange sorbet, and
+                    vanilla bean anglaise.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-48 text-center">
+              <button
+                class="text-primary-container border-b-2 border-primary/20 pb-2 overline-spec hover:text-primary transition-all text-lg"
+              >
+                View Full Wine List
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section
+        id="about"
+        class="bg-surface-container py-48 md:py-64 overflow-hidden"
+      >
+        <div
+          class="main-content-container grid grid-cols-1 lg:grid-cols-12 gap-24 items-center"
+        >
+          <div class="lg:col-span-6 relative">
+            <div
+              class="aspect-[3/4] overflow-hidden rounded-sm shadow-2xl relative z-10"
+            >
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDptOHAzqDO5b1ZHC3aFm1gpEAfKRTqFNVCQHMNervm5wyQKpjbz_7udWX6eOfpxgX3Mc3eVGYh4c9T2StLboQXd-BybvP3k5n1UN1xZMtQlvFGUpeyc2LqeK_tu4GHXgLHad9DEKSDDGjE7Zxb-rmktoDi2pX38Rtc6szlbNd5heIp4JjgXnlrmLx7GVlwwWNjAT9b7NTYSr5H_UnoAciCpQY92_pVAMktP-PPNrfbzYK1ui_iHsc-DlU3grJvwyCaDEaWQUxXw5g"
+                alt="Chef Portrait"
+                class="w-full h-full object-cover"
+                data-alt="portrait of a professional chef in white uniform standing in a modern kitchen with soft lighting and a focused expression"
+              />
+            </div>
+            <!-- quote card -->
+            <div
+              class="chef-overlay-card p-12 absolute -bottom-16 -right-16 z-20 max-w-md shadow-2xl hidden xl:block"
+            >
+              <p class="h3-spec font-headline italic text-primary mb-6">
+                "Cooking is a silent language of love and precision."
+              </p>
+              <span class="overline-spec text-on-surface-variant"
+                >— Chef Pierre Laurent</span
+              >
+            </div>
+          </div>
+          <div class="lg:col-span-6 flex flex-col">
+            <span class="text-primary overline-spec mb-6 block"
+              >Our Philosophy</span
+            >
+            <h2 class="h2-spec font-headline mb-12 text-on-surface">
+              L'Histoire
+            </h2>
+            <div
+              class="space-y-10 body-lg-spec text-on-surface-variant leading-relaxed"
+            >
+              <p>
+                Founded on the belief that dining should be a complete sensory
+                experience, Les Gourmands was born from Chef Pierre Laurent's
+                two decades of exploration across the coastal regions of France
+                and the vibrant markets of the East.
+              </p>
+              <p>
+                Our kitchen is a laboratory of tradition and innovation. We
+                prioritize the "breath" of the ingredients—allowing their
+                natural essence to speak without the clutter of over-complexity.
+                Every dish is a curated editorial of flavor, texture, and visual
+                grace.
+              </p>
+            </div>
+            <div class="mt-16">
+              <a
+                href="#reservations"
+                class="overline-spec font-bold text-primary inline-flex items-center gap-4 group text-lg"
+              >
+                Our Commitment to Quality
+                <span
+                  class="material-symbols-outlined group-hover:translate-x-2 transition-transform text-3xl"
+                  >arrow_right_alt</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- reservations -->
+      <section id="reservations" class="bg-surface py-48 md:py-64">
+        <div class="main-content-container">
+          <div
+            class="max-w-5xl mx-auto bg-surface-container-low p-16 md:p-32 shadow-2xl rounded-sm"
+          >
+            <div class="text-center mb-24 flex flex-col items-center">
+              <h2 class="h2-spec font-headline text-on-surface mb-6">
+                Reserve a Table
+              </h2>
+              <p class="overline-spec text-on-surface-variant text-lg">
+                Join us for an unforgettable evening
+              </p>
+            </div>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+              <div class="flex flex-col space-y-4">
+                <label class="overline-spec text-secondary">Date</label>
+                <input
+                  type="date"
+                  class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface body-lg-spec"
+                />
+              </div>
+              <div class="flex flex-col space-y-4">
+                <label class="overline-spec text-secondary">Time</label>
+                <select
+                  class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface body-lg-spec"
+                >
+                  <option>18:00</option>
+                  <option>19:00</option>
+                  <option>20:00</option>
+                  <option>21:00</option>
+                </select>
+              </div>
+              <div class="flex flex-col space-y-4">
+                <label class="overline-spec text-secondary">Guests</label>
+                <input
+                  type="number"
+                  min="1"
+                  max="10"
+                  placeholder="2"
+                  class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface body-lg-spec"
+                />
+              </div>
+              <div class="flex flex-col space-y-4">
+                <label class="overline-spec text-secondary"
+                  >Special Requests</label
+                >
+                <input
+                  type="text"
+                  placeholder="Anniversary, Allergies..."
+                  class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface body-lg-spec"
+                />
+              </div>
+              <div class="md:col-span-2 pt-12 flex flex-col items-center">
+                <button
+                  type="submit"
+                  class="w-full primary-gradient-btn text-on-primary py-8 rounded-md overline-spec !tracking-[0.3em] text-xl hover:opacity-90 active:scale-[0.98] transition-all"
+                >
+                  Request Reservation
+                </button>
+                <p
+                  class="text-center text-xs text-secondary mt-10 uppercase tracking-widest font-medium"
+                >
+                  Confirmation will be sent via email within 24 hours.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- gifts/boutique -->
+      <section id="gifts" class="bg-surface-container-high py-48 md:py-64">
+        <div class="main-content-container">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-32 gap-12"
+          >
+            <div class="flex flex-col">
+              <span class="text-primary overline-spec mb-6 block"
+                >Exclusives</span
+              >
+              <h2 class="h2-spec font-headline text-on-surface">
+                The Boutique
+              </h2>
+            </div>
+            <p
+              class="max-w-xl body-lg-spec text-on-surface-variant italic leading-relaxed"
+            >
+              Give the gift of refined taste. Our curated collection of sensory
+              experiences and artisanal products.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Gift Card -->
+            <div class="group cursor-pointer flex flex-col">
+              <div
+                class="aspect-[4/5] bg-surface-container overflow-hidden mb-8 relative"
+              >
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDREimeBeTpISjAyge53S5nWXyNlLHKyFeYpisEyWsv9IBNwYo_MEkuO3IwhxPqmi1xtiigdCUbJSuG4YRzbUtc4F95PIzD-dtIhyk17ANia6j8wd-M5IIoc_rWFlHM9VQ7AgNLNHz136VI5qLPrzow7hKyG2hfUfWeH1SWC5dCrBqJ-EQWdP3hoejofNPC7T9pTBwAplC9fxCo42mmR0ApmD8B3O5IsrQjRnstoSgmNCqqrfuiUzkyWKOSAFCfNG5M_ZN1lwMPh5c"
+                  alt="Gift Card"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  data-alt="minimalist golden gift card resting on a white textured fabric with soft lighting"
+                />
+                <div
+                  class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors"
+                ></div>
+              </div>
+              <h3 class="body-spec font-bold uppercase tracking-widest mb-2">
+                Experience Gift Card
+              </h3>
+              <p class="overline-spec text-secondary !tracking-normal text-lg">
+                From 100
+              </p>
+            </div>
+
+            <!-- Boutique Item 1 -->
+            <div class="group cursor-pointer flex flex-col">
+              <div
+                class="aspect-[4/5] bg-surface-container overflow-hidden mb-8 relative"
+              >
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAibTa_juFRw0piXkP8orUihfp5CYiPnqYChhfEJgOl8E_gRKa6KVVfrIi2kW4Pe5FkpikG3rYstHwvFYmyIiz8lNDsUfUwkuMfKoi2u5c4aqSko1Fsr3Vbxt13guu5_KYqqHXaPZBQ5-5QwmODDl4Cv8T8WyAD_hIc7BYeNwAJHS3JUcmcci1B4Ua6G8HQ2ZZDUUv7BcX1eqJoz39oLZzfY2GqN-Fbf0YwjXKur7CQ83Rv6oJNxeiR7tMMAarZ-U1vc6loxG2jFcs"
+                  alt="House Wine"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  data-alt="elegant dark glass wine bottle with a minimal cream label featuring gold leaf accents"
+                />
+                <div
+                  class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors"
+                ></div>
+              </div>
+              <h3 class="body-spec font-bold uppercase tracking-widest mb-2">
+                Reserve Selection Rouge
+              </h3>
+              <p class="overline-spec text-secondary !tracking-normal text-lg">
+                85
+              </p>
+            </div>
+
+            <!-- Boutique Item 2 -->
+            <div class="group cursor-pointer flex flex-col">
+              <div
+                class="aspect-[4/5] bg-surface-container overflow-hidden mb-8 relative"
+              >
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQwnPZ79YakxtQERZGi49bFS8KI_HEgn5P5DBZsB5f5yD2RfELFfZv---DfZ79cxRureiysBYcY2GJWcHdxMN1IAO0tKBrlghC8llzmLQFchNw30Etbgtd5zxpOwd2d2kC0t4zB7WRD1Hlcuv-xyzc5S1FLKtpS6_De98MNT7Xd3GnfMJNG9D7SO5jPOFa_JBKKjyqx4xJfgdpa1ReXHSIAEd5GI5etBx-cRfYE67sRieKmDze5XB7tKIAWRxp02U1AUIcdRN7rL4"
+                  alt="Truffle Oil"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  data-alt="luxury artisanal oil bottle with professional minimal packaging on a neutral surface"
+                />
+                <div
+                  class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors"
+                ></div>
+              </div>
+              <h3 class="body-spec font-bold uppercase tracking-widest mb-2">
+                Artisan White Truffle Oil
+              </h3>
+              <p class="overline-spec text-secondary !tracking-normal text-lg">
+                45
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact info -->
+      <section id="contact" class="bg-surface py-48 md:py-64">
+        <div
+          class="main-content-container grid grid-cols-1 lg:grid-cols-12 gap-32"
+        >
+          <div class="lg:col-span-5 flex flex-col">
+            <h2 class="h2-spec font-headline mb-20 text-on-surface">Contact</h2>
+            <div class="space-y-20 flex flex-col">
+              <div class="flex flex-col">
+                <span class="overline-spec text-primary mb-6 block text-lg"
+                  >Location</span
+                >
+                <p class="body-lg-spec text-on-surface-variant">
+                  42 Rue de la Gastronomie,<br />75001 Paris, France
+                </p>
+              </div>
+              <div class="flex flex-col">
+                <span class="overline-spec text-primary mb-6 block text-lg"
+                  >Opening Hours</span
+                >
+                <ul
+                  class="body-spec text-on-surface-variant space-y-4 flex flex-col"
+                >
+                  <li class="flex justify-between max-w-md">
+                    <span>Tue — Thu</span> <span>18:30 – 23:00</span>
+                  </li>
+                  <li
+                    class="flex justify-between max-w-md font-bold text-on-surface"
+                  >
+                    <span>Fri — Sat</span> <span>18:30 – 00:00</span>
+                  </li>
+                  <li class="flex justify-between max-w-md">
+                    <span>Sunday</span> <span>12:00 – 16:00</span>
+                  </li>
+                  <li class="flex justify-between max-w-md opacity-50">
+                    <span>Monday</span> <span>Closed</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-col">
+                <span class="overline-spec text-primary mb-6 block text-lg"
+                  >Reservations &amp; Inquiries</span
+                >
+                <p class="body-lg-spec text-on-surface-variant">
+                  +33 1 23 45 67 89
+                </p>
+                <p class="body-lg-spec text-on-surface-variant">
+                  maison@lesgourmands.com
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-7 bg-surface-container-low p-12 md:p-24 flex flex-col"
+          >
+            <h3 class="h3-spec font-headline mb-12">Send a Message</h3>
+            <form class="space-y-12 flex flex-col">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface body-spec"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface body-spec"
+                />
+              </div>
+              <textarea
+                placeholder="Your Message"
+                rows="5"
+                class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary transition-colors text-on-surface resize-none body-spec"
+              ></textarea>
+              <div>
+                <button
+                  type="submit"
+                  class="primary-gradient-btn text-on-primary px-16 py-6 rounded-md overline-spec text-xl hover:opacity-90 transition-all"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-stone-50 dark:bg-stone-900 w-full py-32">
+      <div class="main-content-container">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-12 border-t border-stone-200 dark:border-stone-800 pt-20"
+        >
+          <div class="flex flex-col items-center md:items-start">
+            <span class="font-serif italic text-3xl text-rose-900 mb-4"
+              >Les Gourmands</span
+            >
+            <p
+              class="overline-spec text-stone-500 !tracking-[0.1em] lowercase text-sm"
+            >
+              © 2024 Les Gourmands. All rights reserved.
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-12">
+            <a
+              href="#"
+              class="overline-spec text-stone-500 hover:text-rose-900 transition-colors hover:underline decoration-rose-900/20 text-sm"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="overline-spec text-stone-500 hover:text-rose-900 transition-colors hover:underline decoration-rose-900/20 text-sm"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="overline-spec text-stone-500 hover:text-rose-900 transition-colors hover:underline decoration-rose-900/20 text-sm"
+              >Press Kit</a
+            >
+            <a
+              href="#"
+              class="overline-spec text-stone-500 hover:text-rose-900 transition-colors hover:underline decoration-rose-900/20 text-sm"
+              >Careers</a
+            >
+          </div>
+          <div class="flex gap-10">
+            <a
+              href="#"
+              class="text-stone-400 hover:text-rose-900 transition-colors scale-125"
+            >
+              <span class="material-symbols-outlined">share</span>
+            </a>
+            <a
+              href="#"
+              class="text-stone-400 hover:text-rose-900 transition-colors scale-125"
+            >
+              <span class="material-symbols-outlined">public</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
